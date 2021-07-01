@@ -22,8 +22,8 @@ public class ProgramaPrincipal {
 		CursoController cursoController = new CursoController();
 
 		do {
-			System.out.print("\n");
-			System.out.println("|--- MENU PRINCIPAL --- |");
+			
+			System.out.println("|-------- MENU -------- |");
 			System.out.println("|1 -> Menu De Alunos    |");
 			System.out.println("|2 -> Menu De Cursos    |");
 			System.out.println("|0 -> Sair              |");

@@ -34,7 +34,7 @@ public class CursoController {
 			break;
 
 		case 3:
-			editarCurso(cursos);
+			//editarCurso(cursos);
 			break;
 
 		case 4:
@@ -80,31 +80,7 @@ public class CursoController {
 		return cursos;
 	}
 
-	public List<Curso> editarCurso(List<Curso> cursos) {
-
-		if (cursos.isEmpty()) {
-			System.out.print("\n");
-			System.out.println("nao possui dados cadastrados");
-			return null;
-		}
-
-		listarCursos(cursos);
-
-		Curso curso = new Curso();
-		System.out.print("\n");
-		System.out.println("---- EDITAR CURSO ----");
-		System.out.print("\n");
-		System.out.print("Informe o ID do curso -> ");
-		int idCurso = in.nextInt() - 1;
-		System.out.print("\n");
-		System.out.print("Informe novamente o nome do curso -> ");
-		curso.setNomeCurso(in.nextLine());
-
-		cursos.set(idCurso, curso);
-
-		return cursos;
-	}
-
+	
 	public void excluirCurso(List<Curso> cursos, List<Aluno> alunos) {
 
 		if (cursos.isEmpty()) {

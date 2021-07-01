@@ -63,14 +63,14 @@ public class AlunoController {
 
 		cursoController.listarCursos(cursos);
 
-		System.out.println("---- ID DO CURSO ----");
+		System.out.println("---- ID DOS CURSOS ----");
 
 		System.out.print("Informe o ID do curso desejado -> ");
 		int idCurso = in.nextInt() - 1;
 
 		aluno.setCurso(cursos.get(idCurso));
 		System.out.print("\n");
-		System.out.println("--- ID DO ALUNO ---");
+		System.out.println("--- INFORMAÇÕES DO ALUNO ---");
 
 		in.nextLine();
 
